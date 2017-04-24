@@ -4,10 +4,11 @@ import { CustomerService } from './customer.service';
 import { CustomerContainerComponent } from './customer-container/customer-container.component';
 import { CustomerListComponent } from './customer-list/customer-list.component';
 import { CustomerDetailComponent } from './customer-detail/customer-detail.component';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule, CoreModule
   ],
   declarations: [CustomerContainerComponent, CustomerListComponent, CustomerDetailComponent],
   providers: [CustomerService],
