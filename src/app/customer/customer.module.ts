@@ -8,7 +8,7 @@ import { CoreModule } from '../core/core.module';
 
 @NgModule({
   imports: [
-    CommonModule, CoreModule
+    CommonModule
   ],
   declarations: [CustomerContainerComponent, CustomerListComponent, CustomerDetailComponent],
   providers: [CustomerService],

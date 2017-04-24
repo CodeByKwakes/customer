@@ -1,3 +1,8 @@
 <p>
   sidebar works!
 </p>
+
+<app-customer-list [customers]="customers"
+                   [(selected)]="selectedCustomer"></app-customer-list>
+<app-customer-detail [customer]="selectedCustomer"
+                     class="col-8"></app-customer-detail>

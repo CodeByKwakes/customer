@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Customer } from '../../customer/customer';
 
 @Component({
   selector: 'app-sidebar',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
-
+  selectedCustomer: Customer;
+  @Input() customers: Customer[];
   constructor() { }
 
   ngOnInit() {
