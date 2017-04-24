@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <div class="row">
+    <h2>{{title}}</h2>
+  </div>
+
+  <app-customer-container [customers]="customers" class="row"></app-customer-container>
+</div>

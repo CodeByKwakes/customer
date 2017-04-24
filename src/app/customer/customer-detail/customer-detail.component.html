@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+  <div *ngIf="!customer"
+       class="panel-heading">
+    <h3 class="panel-title">Select a Customer</h3>
+  </div>
+
+  <div class="card"
+       *ngIf="customer"
+       style="width: 20rem;">
+    <div class="card-block">
+      <h4 class="card-title">{{customer.name.first}} {{customer.name.last}}</h4>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">First Name: {{customer.name.first}}</li>
+      <li class="list-group-item">Last Name: {{customer.name.last}}</li>
+      <li class="list-group-item">Email: {{customer.email}}</li>
+    </ul>
+  </div>
+</div>
